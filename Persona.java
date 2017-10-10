@@ -1,3 +1,5 @@
+package mirefugio.poo;
+
 public class Persona{
 
 	private String nombre;
