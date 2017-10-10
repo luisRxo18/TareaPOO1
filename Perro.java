@@ -1,3 +1,5 @@
+package mirefugio.poo;
+
 public class Perro{
 	private String raza;
 	private String nombre;
