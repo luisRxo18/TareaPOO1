@@ -1,3 +1,5 @@
+package mirefugio.poo;
+
 public class Refugio {
 	private String nombre;
 	private ArrayList<Animal> disponibles;
