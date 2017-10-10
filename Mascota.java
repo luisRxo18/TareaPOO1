@@ -1,3 +1,5 @@
+package mirefugio.poo;
+
 public interface Mascota{
 	public String getNombre();
 	public void setNombre(String nombre);
