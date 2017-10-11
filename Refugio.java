@@ -1,5 +1,6 @@
 package mirefugio.poo;
 import java.util.ArrayList;
+import java.util.Scanner
 
 public class Refugio {
 	private String nombre;
@@ -24,7 +25,11 @@ public class Refugio {
 		}
 	}
 	public Mascota eligeMascota(){
-		return null;
+		Scanner sc = new Scanner(System.in);
+		for (Animal animal : disponibles)
+			Sytem.out.println(animal);
+			System.out.println("Quieres elegir esta mascota? S\N ");
+			
 	}
 
 }
