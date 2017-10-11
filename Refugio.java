@@ -1,14 +1,17 @@
 package mirefugio.poo;
 import java.util.ArrayList;
-import java.util.Scanner
+import java.util.Scanner;
+
 
 public class Refugio {
+    Scanner scan = new Scanner(System.in);
+    int elec;
 	private String nombre;
 	private ArrayList<Animal> disponibles;
 
 	public Refugio(String nombre){
-		this.nombre=nombre;
-		disponibles = new ArrayList<Animal>();
+        setNombre(nombre);
+        disponibles = new ArrayList<Animal>();
 	}
 	public String getNombre(){
 		return this.nombre;
@@ -17,23 +20,29 @@ public class Refugio {
 		this.nombre=nombre;
 	}
 	public void refugiaNuevoAnimal(Animal animal){
-		disponibles.add(animal);
+        disponibles.add(animal);
 	}
 	public void revisaDisponibles(){
-		for (Animal animal : disponibles){
-			System.out.println(animal);
-		}
+        for (Animal animal : disponibles){
+            System.out.println(animal);
+        }
 	}
 	public Mascota eligeMascota(){
-		Scanner sc = new Scanner(System.in);
-		for (Animal animal : disponibles){
-			Sytem.out.println(animal);
-			System.out.println("Quieres elegir esta mascota? S\N ");
-			opcion = sc.next();
-			if (opcion.equals("s")){
-				
-			}
-		}
+        for(Animal an : disponibles){
+            System.out.println("Quieres Adoptar a la mascota: "+ an + " ? Si=1 / No=2 ");
+            elec = scan.nextInt();
+            if(elec==1){
+                disponibles.pop(an);
+                return an;
+            }
+            else{
+                System.out.println("No adoptaste nada");
+                return null;
+            }
+            
+            
+        }
+		return null;
 	}
 
 }
