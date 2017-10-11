@@ -32,8 +32,12 @@ public class Refugio {
             System.out.println("Quieres Adoptar a la mascota: "+ an + " ? Si=1 / No=2 ");
             elec = scan.nextInt();
             if(elec==1){
-                disponibles.pop(an);
-                return an;
+                int b = disponibles.indexOf(an);
+                
+                disponibles.remove(b);
+                Mascota ma = (Mascota)an;
+                
+                return ma;
             }
             else{
                 System.out.println("No adoptaste nada");
