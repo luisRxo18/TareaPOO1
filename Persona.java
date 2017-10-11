@@ -36,7 +36,7 @@ public class Persona {
 	}
 	public void muestraMascotas(){
         for(Mascota mas : mascotas){
-            System.out.println(mas);
+            System.out.println("Tienes de mascota a "+ mas.getNombre());
         }
 	}
 }
