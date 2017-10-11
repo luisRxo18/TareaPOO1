@@ -28,7 +28,7 @@ public class Persona {
 		enRefugio = refugio;
 	}
 	public void adopta(){
-		
+		mascotas.add(enRefugio.eligeMascota)
 	}
 	public void muestraMascotas(){
         	for(Mascota mas : mascotas){
