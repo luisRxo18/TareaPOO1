@@ -31,6 +31,7 @@ public class Persona {
 		
 	}
 	public void muestraMascotas(){
-		
-	}
+        	for(Mascota mas : mascotas){
+            		System.out.println(mas);
+       		 }
 }
