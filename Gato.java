@@ -8,6 +8,7 @@ public class Gato implements Mascota, Animal{
 
 	public Gato(String raza){
 		this.raza=raza;
+		duenio = new Persona();
 	}
 	public void setRaza(String raza){
 		this.raza = raza;
