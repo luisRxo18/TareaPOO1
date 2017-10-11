@@ -7,6 +7,7 @@ public class Refugio {
 
 	public Refugio(String nombre){
 		this.nombre=nombre;
+		disponibles = new ArrayList<Animal>();
 	}
 	public String getNombre(){
 		return this.nombre;
@@ -15,10 +16,12 @@ public class Refugio {
 		this.nombre=nombre;
 	}
 	public void refugiaNuevoAnimal(Animal animal){
-
+		disponibles.add(animal);
 	}
 	public void revisaDisponibles(){
-
+		for (Animal animal : disponibles){
+			System.out.println(animal);
+		}
 	}
 	public Mascota eligeMascota(){
 		return null;
