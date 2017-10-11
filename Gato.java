@@ -9,7 +9,6 @@ public class Gato implements Mascota, Animal{
 	public Gato(String raza){
 		this.raza=raza;
 	}
-
 	public void setRaza(String raza){
 		this.raza = raza;
 	}
@@ -20,13 +19,13 @@ public class Gato implements Mascota, Animal{
 		this.nombre=nombre;
 	}
 	public Persona getDuenio(){
-		return null;
+		return duenio;
 	}
-	public void adoptado (Persona adoptante){
-
+	public void adoptado(Persona adoptante){
+		duenio = adoptante;
 	}
 	public String hablar(){
-		return "voy a conquistar el mundo";
+		return "Miau miau miau miau";
 	}
 	public String getRaza(){
 		return raza;
