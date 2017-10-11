@@ -26,10 +26,14 @@ public class Refugio {
 	}
 	public Mascota eligeMascota(){
 		Scanner sc = new Scanner(System.in);
-		for (Animal animal : disponibles)
+		for (Animal animal : disponibles){
 			Sytem.out.println(animal);
 			System.out.println("Quieres elegir esta mascota? S\N ");
-			
+			opcion = sc.next();
+			if (opcion.equals("s")){
+				
+			}
+		}
 	}
 
 }
