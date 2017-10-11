@@ -24,12 +24,12 @@ public class Refugio {
 	}
 	public void revisaDisponibles(){
         for (Animal animal : disponibles){
-            System.out.println(animal);
+            System.out.println("animal : " + animal.getRaza());
         }
 	}
 	public Mascota eligeMascota(){
         for(Animal an : disponibles){
-            System.out.println("Quieres Adoptar a la mascota: "+ an + " ? Si=1 / No=2 ");
+            System.out.println("Quieres Adoptar a la mascota: "+ an.getRaza() + " ? Si=1 / No=2 ");
             elec = scan.nextInt();
             if(elec==1){
                 int b = disponibles.indexOf(an);
@@ -41,7 +41,7 @@ public class Refugio {
             }
             else{
                 System.out.println("No adoptaste nada");
-                return null;
+                
             }
             
             
