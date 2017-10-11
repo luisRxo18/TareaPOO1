@@ -26,9 +26,9 @@ public class DiaDeAdopciones {
 		ref1.refugiaNuevoAnimal(gato1);
 		ref1.refugiaNuevoAnimal(gato2);
 		ref1.refugiaNuevoAnimal(zorro1);
-		ref1.refugiaNuevoAnimal(zorro2);
+		ref1.refugiaNuevoAnimal(zorro2); 
 		
-		
+	
 		/*Comienza el proceso*/
 		System.out.println("\nJuan visita el refugio\n\n");
 		juan.visitaRefugio(ref1);
@@ -36,7 +36,7 @@ public class DiaDeAdopciones {
 		
 		juan.adopta();
 		juan.muestraMascotas();
-		
+	/*	
 		juan.adopta();
 		juan.muestraMascotas();
 		
@@ -47,7 +47,7 @@ public class DiaDeAdopciones {
 		
 		System.out.println("\n\nEn el refugio quedan estos animales:\n");
 		ref1.revisaDisponibles();
-		
+	*/	
 		System.out.println("\n\nImprimiendo todos los objetos animales\n");
 		System.out.println(perro1);
 		System.out.println(perro2);

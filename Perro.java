@@ -7,7 +7,7 @@ public class Perro implements Mascota, Animal{
 
 	public Perro(String raza){
 		this.raza=raza;
-		duenio = new Persona();
+		this.nombre="Sin nombre";
 	}
 	public void setRaza(String raza){
 		this.raza = raza;
@@ -29,5 +29,13 @@ public class Perro implements Mascota, Animal{
 	}
 	public String getRaza(){
 		return raza;
+	}
+	public String toString(){
+		String d;
+		if (this.duenio == null)
+			d = "Sin duenio";
+		else
+			d = this.duenio.getNombre();
+		return ""+this.raza+", " + this.nombre+", "+d+"";
 	}
 }
