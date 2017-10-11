@@ -31,11 +31,18 @@ public class Refugio {
         for(Animal an : disponibles){
             System.out.println("Quieres Adoptar a la mascota: "+ an.getRaza() + " ? Si=1 / No=2 ");
             elec = scan.nextInt();
+            scan.nextLine();
             if(elec==1){
+                String nam;
+                System.out.println("Que nombre le vas a poner?");
+                nam = scan.nextLine();
+                
+                
                 int b = disponibles.indexOf(an);
                 
                 disponibles.remove(b);
                 Mascota ma = (Mascota)an;
+                ma.setNombre(nam);
                 
                 return ma;
             }
