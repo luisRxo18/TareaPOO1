@@ -12,23 +12,23 @@ public class Persona {
 		this.edad=edad;
 	}
 	public String getNombre(){
-		return this.nombre;
+		return nombre;
 	}
 	public void setNombre(String nombre){
 		this.nombre=nombre;
 	}
 	public int getEdad(){
-		return this.edad;
+		return edad;
 	}
 	public void setEdad (int edad){
 		this.edad=edad;
 
 	}
 	public void visitaRefugio(Refugio refugio){
-		enRefugio=refugio;
+		enRefugio = refugio;
 	}
 	public void adopta(){
-
+		
 	}
 	public void muestraMascotas(){
 		
