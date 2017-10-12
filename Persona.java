@@ -29,7 +29,7 @@ public class Persona {
 		enRefugio = refugio;
 	}
 	public void adopta(){
-		mascota nuevaMascota = this.enRefugio.eligeMascota();
+		Mascota nuevaMascota = this.enRefugio.eligeMascota();
 		if(mascota!=null){
 			Scanner input = new Scanner(System.in)
 			System.out.print("Cual sera su nombre?");
