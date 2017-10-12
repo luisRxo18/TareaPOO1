@@ -4,10 +4,10 @@ public class DiaDeAdopciones {
 
 	public static void main(String[] args) {
 		/*Creando obejtos*/
-		Persona juan = new Persona("Juan Perez", 18);
-		Persona ana = new Persona("Ana Lopez", 20);
+		Persona luis = new Persona("Luis Diaz", 18);
+		Persona vanessa = new Persona("Vanessa Solares", 19);
 		
-		Refugio ref1 = new Refugio("Adopt a PET");
+		Refugio ref1 = new Refugio("AaPET");
 		
 		Perro perro1 = new Perro("Dalmata");
 		Gato gato1 = new Gato("Siames");
@@ -28,22 +28,22 @@ public class DiaDeAdopciones {
 		ref1.refugiaNuevoAnimal(zorro1);
 		ref1.refugiaNuevoAnimal(zorro2);
 		
-		
+
 		/*Comienza el proceso*/
-		System.out.println("\nJuan visita el refugio\n\n");
-		juan.visitaRefugio(ref1);
+		System.out.println("\nLuis visita el refugio\n\n");
+		luis.visitaRefugio(ref1);
 		
 		
-		juan.adopta();
-		juan.muestraMascotas();
+		luis.adopta();
+		luis.muestraMascotas();
 		
-		juan.adopta();
-		juan.muestraMascotas();
+		luis.adopta();
+		luis.muestraMascotas();
 		
 		System.out.println("\n\nAna visita el refugio\n\n");
-		ana.visitaRefugio(ref1);
-		ana.adopta();
-		ana.muestraMascotas();
+		vanessa.visitaRefugio(ref1);
+		vanessa.adopta();
+		vanessa.muestraMascotas();
 		
 		System.out.println("\n\nEn el refugio quedan estos animales:\n");
 		ref1.revisaDisponibles();
