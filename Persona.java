@@ -11,6 +11,7 @@ public class Persona {
 	public Persona(String nombre, int edad){
 		this.nombre=nombre;
 		this.edad=edad;
+		mascotas = new ArrayList<Mascota>();
 	}
 	public String getNombre(){
 		return nombre;
@@ -30,11 +31,11 @@ public class Persona {
 	}
 	public void adopta(){
 		Mascota nuevaMascota = this.enRefugio.eligeMascota();
-		if(mascota!=null){
-			Scanner input = new Scanner(System.in)
+		if(nuevaMascota!=null){
+			Scanner input = new Scanner(System.in);
 			System.out.print("Cual sera su nombre?");
 			String nom = input.nextLine();
-			nuevaMascota.setNombre(nom)
+			nuevaMascota.setNombre(nom);
 			this.mascotas.add(nuevaMascota);
 			nuevaMascota.adoptado(this);
 		}

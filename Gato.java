@@ -26,7 +26,7 @@ public class Gato implements Mascota, Animal{
 		duenio = adoptante;
 	}
 	public String hablar(){
-		return "Miau miau miau miau";
+		return "Miau! ";
 	}
 	public String getRaza(){
 		return raza;
@@ -37,7 +37,7 @@ public class Gato implements Mascota, Animal{
 			d = "Sin duenio";
 		else
 			d = this.duenio.getNombre();
-		return ""+this.raza+", " + this.nombre+", "+d+"";
+		return ""+this.raza+", " + this.nombre+", de "+d+"";
 	}
 
 }

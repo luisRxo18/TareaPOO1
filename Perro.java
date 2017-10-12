@@ -25,7 +25,7 @@ public class Perro implements Mascota, Animal{
 		duenio=adoptante;
 	}
 	public String hablar(){
-		return "Guau Guau Guau Guau";
+		return "Guau!";
 	}
 	public String getRaza(){
 		return raza;
@@ -36,6 +36,6 @@ public class Perro implements Mascota, Animal{
 			d = "Sin duenio";
 		else
 			d = this.duenio.getNombre();
-		return ""+this.raza+", " + this.nombre+", "+d+"";
+		return ""+this.raza+", " + this.nombre+", de "+d+"";
 	}
 }
