@@ -1,5 +1,6 @@
 package mirefugio.poo;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Persona {
 	private String nombre;
@@ -28,10 +29,19 @@ public class Persona {
 		enRefugio = refugio;
 	}
 	public void adopta(){
-		mascotas.add(enRefugio.eligeMascota())
+		mascota nuevaMascota = this.enRefugio.eligeMascota();
+		if(mascota!=null){
+			Scanner input = new Scanner(System.in)
+			System.out.print("Cual sera su nombre?");
+			String nom = input.nextLine();
+			nuevaMascota.setNombre(nom)
+			this.mascotas.add(nuevaMascota);
+			nuevaMascota.adoptado(this);
+		}
 	}
 	public void muestraMascotas(){
         	for(Mascota mas : mascotas){
             		System.out.println(mas);
        		 }
+	}
 }
