@@ -33,6 +33,7 @@ public class Refugio {
             elec = scan.nextInt();
             scan.nextLine();
             if(elec==1){
+                try{
                 String nam;
                 System.out.println("Que nombre le vas a poner?");
                 nam = scan.nextLine();
@@ -41,10 +42,16 @@ public class Refugio {
                 int b = disponibles.indexOf(an);
                 
                 disponibles.remove(b);
+                
                 Mascota ma = (Mascota)an;
                 ma.setNombre(nam);
                 
                 return ma;
+                }
+                catch(Exception error){
+                    System.out.println("No puedes adoptar un zorro es ilegal");
+                    System.exit (0);
+                }
             }
             else{
                 System.out.println("No adoptaste nada");
